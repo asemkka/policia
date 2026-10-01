@@ -1,13 +1,14 @@
 import java.util.Scanner;
 
-public class pol18{
+public class pol18 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        int n = sc.nextInt();
-        int m = sc.nextInt();
+        int n = scanner.nextInt();
+        int k = scanner.nextInt();
 
-        System.out.println((m + n - 1) / n);
+        int result = (n - (k % n)) % n;
+
+        System.out.println(result);
     }
 }
-
