@@ -6,7 +6,7 @@ public class pol12 {
 
         int n = sc.nextInt();
 
-        int hours = n / 3600;
+        int hours = (n / 3600) % 24;
         int minutes = (n / 60) % 60;
         int seconds = n % 60;
 
